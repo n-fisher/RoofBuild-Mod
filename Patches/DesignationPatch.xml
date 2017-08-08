@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/DesignationCategoryDef[DefName = "Zone"]/specialDesignatorClasses</xpath>
+    <value>
+      <li>RoofView_Mod.Designator_AreaBuildRoofExpandMod</li>
+    </value>
+  </Operation>
+</Patch>
