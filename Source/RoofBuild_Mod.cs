@@ -4,37 +4,37 @@ using Verse;
 
 namespace RoofBuild_Mod
 {
-    public class Designator_AreaBuildRoofExpandMod : Designator_AreaBuildRoofExpand
+    public class Designator_AreaBuildRoofMod : Designator_AreaBuildRoof
     {
         private DesignateMode mode;
 
-        public Designator_AreaBuildRoofExpandMod()
+        public Designator_AreaBuildRoofMod()
         {
-            this.mode = DesignateMode.Add;
-            this.defaultLabel = "Bounded expand roof area";
-            this.defaultDesc = "Colonists will build roofs in this area. Does not select unroofable areas.";
-            this.icon = ContentFinder<Texture2D>.Get("UI/Designators/BuildRoofAreaExpand", true);
-            this.soundDragSustain = SoundDefOf.DesignateDragAreaAdd;
-            this.soundDragChanged = SoundDefOf.DesignateDragAreaAddChanged;
-            this.soundSucceeded = SoundDefOf.DesignateAreaAdd;
+            mode = DesignateMode.Add;
+            defaultLabel = "Bounded build roof area";
+            defaultDesc = "Colonists will build roofs in this area. Does not select unroofable areas.";
+            icon = ContentFinder<Texture2D>.Get("UI/Designators/BuildRoofArea", true);
+            soundDragSustain = SoundDefOf.DesignateDragAreaAdd;
+            soundDragChanged = SoundDefOf.DesignateDragAreaAddChanged;
+            soundSucceeded = SoundDefOf.DesignateAreaAdd;
         }  
 
         public override AcceptanceReport CanDesignateCell(IntVec3 c)
         {
-            if (!c.InBounds(base.Map))
+            if (!c.InBounds(Map))
             {
                 return false;
             }
-            if (c.Fogged(base.Map))
+            if (c.Fogged(Map))
             {
                 return false;
             }
-            if (!RoofCollapseUtility.WithinRangeOfRoofHolder(c, base.Map))
+            if (!RoofCollapseUtility.WithinRangeOfRoofHolder(c, Map))
             {
                 return false;
             }
-            bool flag = base.Map.areaManager.BuildRoof[c];
-            if (this.mode == DesignateMode.Add)
+            bool flag = Map.areaManager.BuildRoof[c];
+            if (mode == DesignateMode.Add)
             {
                 return !flag;
             }

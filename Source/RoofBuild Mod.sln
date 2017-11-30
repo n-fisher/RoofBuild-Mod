@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.16
+VisualStudioVersion = 15.0.27004.2009
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoofView Mod", "RoofView Mod.csproj", "{6C2A1122-F7B4-4E50-AA9E-6518EB5CE73B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoofBuild Mod", "RoofBuild Mod.csproj", "{6C2A1122-F7B4-4E50-AA9E-6518EB5CE73B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,5 +18,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D3AECB46-CC6D-426A-B0A6-72EAB12599B0}
 	EndGlobalSection
 EndGlobal
