@@ -5,6 +5,12 @@ This mod for Rimworld Alpha 17 adds a button to designate roof expansion bounded
 Source code uploaded for benefit of future modders. Using a new [a17] technique for patching rather than defining my XML.
 
 ## Updates
+Sep 8 2018
+B19 Update
+
+Nov 29 2017
+B18 Update
+
 Aug 8 2017
 Initial Release
 
