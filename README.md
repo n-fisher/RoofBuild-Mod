@@ -1,10 +1,13 @@
 # RoofBuild-Mod (Bounded Roof Build Tool)
 
 ## Description:
-This mod for Rimworld Alpha 17 adds a button to designate roof expansion bounded by where they can be built.
-Source code uploaded for benefit of future modders. Using a new [a17] technique for patching rather than defining my XML.
+This mod for Rimworld adds a button to designate roof expansion bounded by where they can be built.
+Source code uploaded for benefit of future modders.
 
 ## Updates
+Oct 17 2018
+1.0 Update
+
 Sep 8 2018
 B19 Update
 
