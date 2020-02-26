@@ -1,0 +1,8 @@
+﻿<Patch>
+  <Operation Class="PatchOperationInsert">
+    <xpath>/Defs/DesignationCategoryDef[defName="Zone"]/specialDesignatorClasses/li[string(.)="Designator_AreaBuildRoof"]</xpath>
+    <value>
+      <li>RoofBuild_Mod.Designator_AreaBuildRoofMod</li>
+    </value>
+  </Operation>
+</Patch>

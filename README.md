@@ -5,6 +5,9 @@ This mod for Rimworld adds a button to designate roof expansion bounded by where
 Source code uploaded for benefit of future modders.
 
 ## Updates
+Feb 25 2020
+1.1 Update
+
 Oct 17 2018
 1.0 Update
 
